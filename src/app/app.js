@@ -63,7 +63,7 @@ export const run = () => {
   let searchBtn = document.getElementById('form');
   let ls = localStorage.getItem('Categories')
   if (ls) {
-    getResults(JSON.parse(ls)[Math.floor(Math.random() * 4)], true);
+    getResults(JSON.parse(ls)[Math.floor(Math.random() * JSON.parse(ls).length-1)], true);
   }
   searchBtn.addEventListener('submit', (e) => {
     console.log("Called")
