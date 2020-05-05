@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Book Store</title>
+</head>
+
+<body>
+  <!-- Bootstrap Navbar -->
+  <div class="bg container-fluid p-0">
+    <div class="flex flex-wrap justify-content-center">
+      <div class="container-fluid opacity-low p-0 flex bg-black justify-content-center">
+        <nav class="col-lg-11 col-xl-9 navbar-expand-xl navbar-expand-lg navbar navbar-dark sticky-top">
+          <a class="navbar-brand font-weight-bolder logo" href="#">Kvothe's Books</a>
+          <a class="hamburger navbar-toggler" href="#">&#9776;</a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Books</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-lg-11 col-xl-9">
+        <div
+          class="info p-3 col-lg-7 col-xl-5 opacity-low bg-black justify-content-center flex flex-nowrap flex-column">
+          <p class="para-3 font-weight-bolder">You haven't read anything yet.</p>
+          <p>
+            They say outside of a dog, a book is man's best friend(inside of a dog it's too dark to read). come in, chat
+            with us, share your favorite books & films and we'll introduce you to some of the greatest friends you'll
+            ever know.
+          </p>
+          <button type="button" class="btn btn-success visit">Come visit us!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap justify-content-center bg-grey">
+    <form id="form" class="form-inline m-3">
+      <div class="form-group mb-2 mr-0">
+        <label for="findABook" class="sr-only">Find a book!</label>
+        <input id="searchTerm" type="text" class="form-control" id="findABook" placeholder="Find a book!">
+      </div>
+      <button type="submit" class="btn btn-success mb-2">Search</button>
+    </form>
+  </div>
+  <div class="flex flex-wrap justify-content-center">
+    <div id="books" class="col-lg-11 col-xl-9 mb-4 row flex flex-wrap justify-content-between mt-4">
+    </div>
+  </div>
+  <div class="flex flex-wrap justify-content-center alert bg-black mb-0" role="alert">
+    <div class="col-xl-9 col-lg-11 p-0">2019 Created by Vamsi</div>
+  </div>
+</body>
+
+</html>

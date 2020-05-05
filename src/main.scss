@@ -1,0 +1,96 @@
+$lightblack: #000000;
+$lightGrey: #ccc;
+$white: #fff;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    .bg-grey {
+        background-color: $lightGrey;
+    }
+    .bg {
+        background: url('../src/assets/kvothebooks.jpg');
+        background-position: top;
+        min-height: 700px;
+        height: auto;
+    }
+    .opacity-low {
+        opacity: 0.7;
+    }
+    .bg-black {
+        background-color: #000000;
+        border-radius: 0;
+        color: white;
+    }
+    .flex {
+        display: flex;
+    }
+    nav {
+        height: 80px;
+        background-color: $lightblack;
+        .logo {
+            font-size: 1.7em;
+        }
+        ul {
+            li {
+                padding: 0 25px;                
+            }
+        }
+        a {
+            &.hamburger {
+                color: $white!important;
+                border: none;
+            }
+        }
+        
+    }
+
+    .info {
+        color: white;
+        margin-top: 170px;
+        .para-3 {
+            font-size: 3rem;
+            line-height: 1;
+        }
+        .visit {
+            width: 180px;
+            margin: 0 auto;
+        }
+    }
+
+    #books { 
+        .book {
+            width: 32%;
+            height: 178px;
+            .img {
+                height: 100%;
+                width: 120px;
+                background: $lightGrey;
+            }
+            .desc {
+                height: 100px;
+                width: 100%;
+                line-height: 1.2;
+            }
+            .fs-7 {
+                font-size: 0.7rem;
+            }
+            .author {
+                font-size: 1.2rem;
+                line-height: 1;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    body {
+        .bg {
+            background-position: unset;
+        }
+        #books {
+            .book {
+                width: 100%;
+                margin: 0!important;
+            }
+        }
+    }    
+}
+@import "~bootstrap/scss/bootstrap";
